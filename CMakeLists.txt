@@ -11,7 +11,8 @@ enable_testing()
 set(TEST_EXE_NAME ostep_tests)
 
 add_executable(${TEST_EXE_NAME}
-        Codes/2/cpu_test.c)
+        Codes/2/cpu_test.c
+        Codes/2/common.h)
 
 add_test(NAME "OSTEP_TESTS"
         COMMAND ${TEST_EXE_NAME})
